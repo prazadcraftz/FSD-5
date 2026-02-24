@@ -1,0 +1,128 @@
+.app-shell {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	padding: 2rem 1rem;
+	background: linear-gradient(135deg, #eef2ff, #f8fafc 50%, #ecfeff);
+}
+
+.card {
+	width: min(760px, 100%);
+	background-color: #ffffff;
+	border-radius: 18px;
+	padding: 2rem;
+	box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+	border: 1px solid #e2e8f0;
+}
+
+.badge {
+	display: inline-block;
+	margin: 0 0 0.75rem;
+	padding: 0.35rem 0.75rem;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	color: #4338ca;
+	text-transform: uppercase;
+	background-color: #e0e7ff;
+	border-radius: 999px;
+}
+
+.card h1 {
+	margin: 0;
+	font-size: clamp(1.6rem, 3vw, 2.2rem);
+	color: #0f172a;
+}
+
+.subtitle {
+	margin: 0.75rem 0 1.5rem;
+	color: #475569;
+	line-height: 1.5;
+}
+
+.primary-btn {
+	border: 0;
+	border-radius: 10px;
+	padding: 0.75rem 1.2rem;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: #ffffff;
+	background: linear-gradient(135deg, #4f46e5, #2563eb);
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.primary-btn:hover:not(:disabled) {
+	transform: translateY(-1px);
+	box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+.primary-btn:disabled {
+	opacity: 0.8;
+	cursor: not-allowed;
+}
+
+.hint,
+.loading-text {
+	margin-top: 1rem;
+	color: #64748b;
+}
+
+.user-panel {
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+	border-top: 1px solid #e2e8f0;
+}
+
+.user-panel h2 {
+	margin: 0 0 0.85rem;
+	font-size: 1.1rem;
+	color: #1e293b;
+}
+
+.user-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.6rem;
+}
+
+.user-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.75rem;
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+	background-color: #f8fafc;
+}
+
+.avatar {
+	display: grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background-color: #c7d2fe;
+	color: #3730a3;
+	font-weight: 700;
+}
+
+.user-name {
+	margin: 0;
+	color: #0f172a;
+	font-weight: 600;
+}
+
+.user-id {
+	margin: 0.1rem 0 0;
+	font-size: 0.85rem;
+	color: #64748b;
+}
+
+@media (max-width: 640px) {
+	.card {
+		padding: 1.25rem;
+	}
+}
